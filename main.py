@@ -1,6 +1,7 @@
 import sys
 
 from trie import Trie, TrieNode
+from elementalSpelling import elementalSpellings
 
 ELEMENTS_FILE = 'elements.txt'
 WORDS_FILE = 'dictionary.txt'
@@ -42,4 +43,4 @@ def findLongestWord(suffix_list):
     return longestWord
 
 
-print(findLongestWord(element_abbreviations))
+elementalSpellings(findLongestWord(element_abbreviations))

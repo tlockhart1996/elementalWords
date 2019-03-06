@@ -17,6 +17,3 @@ def elementalSpellings(word, wordguess='', partials=elements):
         newguess = wordguess.lower()+part.lower()
         if word.lower().startswith(newguess):
             elementalSpellings(word, wordguess + part)
-
-
-elementalSpellings('nonrepresentationalisms')
